@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 25% 97%;
+    --foreground: 220 20% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 10%;
+
+    --primary: 220 60% 22%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 210 20% 93%;
+    --secondary-foreground: 220 20% 18%;
+
+    --muted: 210 20% 93%;
+    --muted-foreground: 220 15% 46%;
+
+    --accent: 182 55% 38%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 215 20% 88%;
+    --input: 215 20% 88%;
+    --ring: 220 60% 22%;
+
+    --navy-50: 214 100% 97%;
+    --navy-100: 214 95% 93%;
+    --navy-200: 213 97% 87%;
+    --navy-300: 212 96% 78%;
+    --navy-400: 213 94% 68%;
+    --navy-500: 217 91% 60%;
+    --navy-600: 221 83% 53%;
+    --navy-700: 224 76% 48%;
+    --navy-800: 226 71% 40%;
+    --navy-900: 224 64% 33%;
+    --navy-950: 222 60% 22%;
+
+    --teal-400: 182 65% 50%;
+    --teal-500: 182 55% 38%;
+    --teal-600: 182 58% 30%;
+
+    --chart-1: 220 60% 22%;
+    --chart-2: 182 55% 38%;
+    --chart-3: 197 37% 35%;
+    --chart-4: 43 74% 55%;
+    --chart-5: 27 87% 60%;
+
+    --radius: 0.625rem;
+  }
+
+  .dark {
+    --background: 222 47% 8%;
+    --foreground: 210 30% 94%;
+
+    --card: 222 40% 11%;
+    --card-foreground: 210 30% 94%;
+
+    --popover: 222 40% 11%;
+    --popover-foreground: 210 30% 94%;
+
+    --primary: 213 94% 68%;
+    --primary-foreground: 222 47% 8%;
+
+    --secondary: 222 35% 16%;
+    --secondary-foreground: 210 30% 88%;
+
+    --muted: 222 35% 16%;
+    --muted-foreground: 215 20% 55%;
+
+    --accent: 182 60% 45%;
+    --accent-foreground: 222 47% 8%;
+
+    --destructive: 0 62.8% 45%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 222 30% 18%;
+    --input: 222 30% 18%;
+    --ring: 213 94% 68%;
+
+    --chart-1: 213 94% 68%;
+    --chart-2: 182 60% 45%;
+    --chart-3: 197 57% 55%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-tight;
+  }
+}
+
+@layer utilities {
+  .text-gradient-navy {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(220, 60%, 22%) 0%, hsl(213, 94%, 52%) 100%);
+  }
+  .dark .text-gradient-navy {
+    background-image: linear-gradient(135deg, hsl(213, 94%, 75%) 0%, hsl(182, 60%, 55%) 100%);
+  }
+  .text-gradient-teal {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(182, 55%, 38%) 0%, hsl(197, 65%, 50%) 100%);
+  }
+  .dark .text-gradient-teal {
+    background-image: linear-gradient(135deg, hsl(182, 60%, 55%) 0%, hsl(197, 65%, 65%) 100%);
+  }
+  .section-padding {
+    @apply py-20 md:py-28;
+  }
+  .container-narrow {
+    @apply max-w-5xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  .container-wide {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+  .glass-card {
+    @apply bg-white/70 dark:bg-white/5 backdrop-blur-sm border border-white/80 dark:border-white/10;
+  }
+}
