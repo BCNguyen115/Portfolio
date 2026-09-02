@@ -265,8 +265,8 @@ export const projects: Project[] = [
   {
     id: 'enterprise-revenue-forecasting-snowflake',
     title: 'Enterprise Revenue Forecasting & Snowflake ELT Pipeline',
-    role: 'Data Engineer Intern',
-    timeframe: 'Apr 2026 – Aug 2026',
+    role: 'Data Engineer',
+    timeframe: 'Sep 2025 – Present',
     summary:
       'Enterprise ELT pipelines on Snowflake and end-to-end revenue forecasting models combining Facebook Prophet and Bayesian Structural Time Series (STS) to model trend changes, holiday effects, and seasonality.',
     businessProblem:
@@ -299,7 +299,7 @@ export const projects: Project[] = [
     id: 'concentrix-document-etl-platform',
     title: 'Intelligent Document Ingestion & PO ETL Platform',
     role: 'Full-Stack Developer / Data Engineer Intern',
-    timeframe: 'Oct 2025 – Dec 2025',
+    timeframe: 'Mar 2025 – Sep 2025',
     summary:
       'An automated document ETL platform integrating OCR and LLMs to extract, parse, and structure vendor purchase orders and serial numbers into MySQL with FastAPI and React.js.',
     businessProblem:
@@ -431,11 +431,11 @@ export const projects: Project[] = [
 
 export const experience: ExperienceItem[] = [
   {
-    title: 'Data Engineer Intern',
+    title: 'Data Engineer',
     company: 'FPT Software',
-    period: 'Apr 2026 – Aug 2026',
+    period: 'Sep 2025 – Present',
     location: 'Quy Nhon, Vietnam',
-    type: 'Internship',
+    type: 'Present',
     summary:
       'Architected and maintained enterprise ELT pipelines on Snowflake and designed end-to-end revenue forecasting models combining Facebook Prophet and Bayesian Structural Time Series (STS).',
     achievements: [
@@ -459,7 +459,7 @@ export const experience: ExperienceItem[] = [
   {
     title: 'Full-Stack Developer / Data Engineer Intern',
     company: 'Concentrix Viet Nam',
-    period: 'Oct 2025 – Dec 2025',
+    period: 'Mar 2025 – Sep 2025',
     location: 'Ho Chi Minh City, Vietnam',
     type: 'Internship',
     summary:
@@ -486,7 +486,7 @@ export const education: EducationItem[] = [
   {
     degree: 'Bachelor of Science (Hons) in Computing',
     institution: 'University of Greenwich',
-    period: '2021 – 2025',
+    period: '2021 – Sep 2025',
     location: 'Ho Chi Minh City, Vietnam',
     coursework: [
       'Database Systems',

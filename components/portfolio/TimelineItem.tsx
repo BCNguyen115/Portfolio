@@ -27,7 +27,17 @@ export function TimelineItem({ item, isLast = false, className }: TimelineItemPr
               </h3>
               <p className="text-sm font-semibold text-accent mt-0.5">{item.company}</p>
             </div>
-            <span className="text-xs font-medium px-2.5 py-1 rounded-full bg-secondary text-secondary-foreground border border-border/50 flex-shrink-0">
+            <span
+              className={cn(
+                'text-xs font-semibold px-2.5 py-1 rounded-full border flex-shrink-0 inline-flex items-center gap-1.5',
+                item.type.toLowerCase() === 'present' || item.type.toLowerCase() === 'current'
+                  ? 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/30'
+                  : 'bg-secondary text-secondary-foreground border-border/50'
+              )}
+            >
+              {(item.type.toLowerCase() === 'present' || item.type.toLowerCase() === 'current') && (
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+              )}
               {item.type}
             </span>
           </div>

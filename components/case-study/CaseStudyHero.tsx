@@ -58,7 +58,12 @@ export function CaseStudyHero({ data }: { data: CaseStudyData }) {
               Production Ready
             </span>
             <span className="text-xs text-slate-500">|</span>
-            <span className="text-xs text-slate-400 font-medium">{data.role}</span>
+            <span className="text-xs text-slate-400 font-medium">
+              {data.role}
+              {data.timeframe && (
+                <span className="text-slate-500 font-normal"> · {data.timeframe}</span>
+              )}
+            </span>
           </motion.div>
 
           <motion.h1

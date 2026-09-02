@@ -96,8 +96,11 @@ export function ProjectsSection() {
                   <p className="text-base text-slate-400 font-medium mb-1">
                     {enterpriseMultiAgentCaseStudy.subtitle}
                   </p>
-                  <p className="text-xs text-slate-500 mb-5">
+                  <p className="text-xs text-slate-400 font-medium mb-5">
                     {enterpriseMultiAgentCaseStudy.role}
+                    {enterpriseMultiAgentCaseStudy.timeframe && (
+                      <span className="text-slate-500 font-normal"> · {enterpriseMultiAgentCaseStudy.timeframe}</span>
+                    )}
                   </p>
 
                   <p className="text-sm text-slate-300 leading-relaxed mb-6 max-w-2xl">

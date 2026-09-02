@@ -43,6 +43,7 @@ export interface CaseStudyData {
   subtitle: string;
   tagline: string;
   role: string;
+  timeframe?: string;
   status: string;
   badges: CaseStudyBadge[];
   metrics: CaseStudyMetric[];
@@ -59,6 +60,7 @@ export const enterpriseMultiAgentCaseStudy: CaseStudyData = {
   tagline:
     'Architected and deployed an enterprise-grade autonomous Multi-Agent system with a 4-layer architecture, featuring a self-correcting PEV Loop (Plan → Execute → Verify) on LangGraph StateGraph and an advanced 3-tier RAG pipeline (HyDE + Hybrid Search + TEI Cross-Encoder Reranker), reducing hallucination rates to ~0%.',
   role: 'AI Engineer & Full-Stack Engineer',
+  timeframe: 'Jun 2026 – Aug 2026',
   status: 'Production Ready — MVP Enterprise (7 Docker Services, 102+ Test Cases)',
   badges: [
     { label: 'LangGraph StateGraph', category: 'AI' },
